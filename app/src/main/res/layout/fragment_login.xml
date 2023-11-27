@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hometoolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#fafcff"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_gravity="center"
+            android:textColor="#02152b"
+            android:textSize="25sp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서해따라, 시흥따라\n함께가는 시흥 산책길"
+        android:textSize="30sp"
+        android:fontFamily="@font/kimjungchulgothicbold"
+        android:layout_marginTop="112dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="56dp"
+        />
+
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/outline_border"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:text="  아이디를 입력해주세요"
+        android:textColor="#6602152b" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="  비밀번호를 입력해주세요"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:textColor="#6602152b"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/outline_border"
+        />
+
+</LinearLayout>
