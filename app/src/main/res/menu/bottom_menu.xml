@@ -7,6 +7,7 @@
         android:icon="@drawable/ic_home"
         android:title="홈"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="10sp"
         app:showAsAction="withText"
         />
     <item
@@ -15,6 +16,7 @@
         android:icon="@drawable/ic_compass"
         android:title="내 주변"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="10sp"
         app:showAsAction="withText"
         />
     <item
@@ -31,6 +33,7 @@
         android:icon="@drawable/ic_user"
         android:title="마이페이지"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="10sp"
         app:showAsAction="withText"
         />
     <item
@@ -39,6 +42,7 @@
         android:icon="@drawable/ic_setting"
         android:title="설정"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="10sp"
         app:showAsAction="withText"
         />
 </menu>
