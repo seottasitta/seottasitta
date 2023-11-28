@@ -56,6 +56,7 @@
         android:layout_marginBottom="21dp"
         android:background="@drawable/outline_border"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="15sp"
         android:text="  아이디를 입력해주세요"
         android:textColor="#6602152b" />
 
@@ -65,10 +66,42 @@
         android:layout_height="48dp"
         android:text="  비밀번호를 입력해주세요"
         android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="15sp"
         android:textColor="#6602152b"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/outline_border"
         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동로그인"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:textColor="#6602152b"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+
+        <Button
+            android:id="@+id/find_login_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="none"
+            android:text="아이디/비밀번호 찾기"
+            android:textColor="#6602152b"
+            android:layout_marginRight="40dp"></Button>
+
+    </LinearLayout>
 
 </LinearLayout>
