@@ -49,7 +49,7 @@
 
     <EditText
         android:id="@+id/login_id"
-        android:layout_width="match_parent"
+        android:layout_width="332dp"
         android:layout_height="48dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -61,8 +61,8 @@
         android:textColor="#6602152b" />
 
     <EditText
-        android:id="@+id/login_pwd"
-        android:layout_width="match_parent"
+        android:id="@+id/login_pw"
+        android:layout_width="332dp"
         android:layout_height="48dp"
         android:text="  비밀번호를 입력해주세요"
         android:fontFamily="@font/kimjungchulgothicregular"
@@ -75,9 +75,10 @@
         />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/auto_login"
             android:layout_width="wrap_content"
@@ -90,16 +91,66 @@
             android:text="자동로그인"
             android:textColor="#6602152b"
             android:textSize="15sp"
-            android:theme="@style/CustomRadioButton"
-            />
+            android:theme="@style/CustomRadioButton" />
+
         <TextView
             android:id="@+id/search"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:gravity="center|center_vertical"
             android:onClick="onClick"
             android:text="아이디 • 비밀번호 찾기"
-            android:textAlignment="center"
-            android:textSize="16dp"/>
+            android:textColor="#6602152b"
+            android:textSize="15sp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="40dp"
+            />
     </LinearLayout>
 
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/login_btn"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/login_border"
+        android:fontFamily="@font/kimjungchulgothicbold"
+        android:text="로그인"
+        android:textSize="25sp"
+        android:textColor="#fafcff"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:textSize="12sp"
+        android:textColor="#02152b"
+        android:gravity="center_horizontal"
+        tools:text="서해따라, 시흥따라가 처음이신가요?"
+        android:layout_marginTop="186dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/join_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:gravity="center|center_vertical"
+            android:onClick="onClick"
+            android:text="회원가입"
+            android:textColor="#064da1"
+            android:textSize="12sp"
+            android:layout_marginTop="186dp"
+            android:layout_marginRight="90dp"
+            />
+    </LinearLayout>
 </LinearLayout>
