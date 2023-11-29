@@ -19,6 +19,7 @@
         android:minHeight="?attr/actionBarSize"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="20dp"
         >
 
         <TextView
@@ -43,6 +44,7 @@
         android:layout_marginTop="112dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="100dp"
+        android:textColor="#02152b"
         android:layout_marginBottom="56dp"
         />
 

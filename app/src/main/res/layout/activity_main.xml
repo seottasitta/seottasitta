@@ -26,6 +26,7 @@
         app:menu="@menu/bottom_menu"
         app:itemIconTint="@drawable/menu_selector_color"
         app:itemTextColor="@drawable/menu_selector_color"
+        app:elevation="20dp"
         />
 
 
