@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".NearByFragment">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/neartoolbar"
+        android:id="@+id/nearToolbar"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -19,8 +19,7 @@
         android:minHeight="?attr/actionBarSize"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="20dp"
-        >
+        android:elevation="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,23 +28,52 @@
             android:fontFamily="@font/kimjungchulgothicbold"
             android:layout_gravity="center"
             android:textColor="#02152b"
-            android:textSize="25sp"
-            />
+            android:textSize="25sp"/>
 
     </androidx.appcompat.widget.Toolbar>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MoreFragment">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="더보기(메뉴 펼쳐짐)" />
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn1"/>
 
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn2"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn3"/>
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn4"/>
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btn5"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
