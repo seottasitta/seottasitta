@@ -19,14 +19,7 @@
         android:textSize="10sp"
         app:showAsAction="withText"
         />
-    <item
-        android:id="@+id/more"
-        android:enabled="true"
-        android:icon="@drawable/btn"
-        android:title=""
-        android:fontFamily="@font/kimjungchulgothicregular"
-        app:showAsAction="withText"
-        />
+
     <item
         android:id="@+id/myPage"
         android:enabled="true"
