@@ -7,6 +7,7 @@ import com.tukorea.seottasitta.databinding.ActivityMainBinding
 import android.animation.ObjectAnimator
 import android.view.View
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 
 private lateinit var binding: ActivityMainBinding
 
@@ -92,7 +93,10 @@ class MainActivity : AppCompatActivity() {
         }
         //플로팅 버튼 클릭 이벤트 - 카메라
         _binding.fabCamera.setOnClickListener {
-            Toast.makeText(this,"on camera : $isFabOpen", Toast.LENGTH_SHORT).show()
+            val fragment = CameraFragment() as Fragment // CameraFragment를 Fragment로 타입 변환
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.containers, fragment)
+            transaction.commit()
         }
     }
     private fun toggleFab(){
