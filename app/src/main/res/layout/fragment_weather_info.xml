@@ -121,8 +121,6 @@
         </FrameLayout>
     </LinearLayout>
 
-<<<<<<< HEAD
-=======
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,6 +135,4 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
     </TextView>
-
->>>>>>> 1b0e447750eed3f139ede712309945fd12d0ddfb
 </LinearLayout>
