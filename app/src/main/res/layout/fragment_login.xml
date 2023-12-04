@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".LoginFragment">
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/hometoolbar"
@@ -49,32 +48,43 @@
         />
 
 
-    <EditText
-        android:id="@+id/login_id"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="21dp"
-        android:background="@drawable/outline_border"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:text="  아이디를 입력해주세요"
-        android:textColor="#6602152b" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/outline_border"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:text="  이메일을 입력해주세요"
+            android:textColor="#6602152b" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/login_pw"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:text="  비밀번호를 입력해주세요"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:textColor="#6602152b"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-
-        android:background="@drawable/outline_border"
-        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="16">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_pw"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:text="  비밀번호를 입력해주세요"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:textColor="#6602152b"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/outline_border"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,7 +124,7 @@
 
         android:id="@+id/login_btn"
         android:layout_width="332dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/login_border"
@@ -128,17 +138,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="12sp"
-        android:textColor="#02152b"
-        android:gravity="center_horizontal"
-        tools:text="서해따라, 시흥따라가 처음이신가요?"
-        android:layout_marginTop="186dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="12sp"
+            android:textColor="#02152b"
+            android:gravity="center_horizontal"
+            tools:text="서해따라, 시흥따라가 처음이신가요?"
+            android:layout_marginTop="186dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="5dp"/>
 
         <TextView
             android:id="@+id/join_btn"

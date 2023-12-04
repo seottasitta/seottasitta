@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "328629112458",
+    "firebase_url": "https://seottasitta-default-rtdb.firebaseio.com",
+    "project_id": "seottasitta",
+    "storage_bucket": "seottasitta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328629112458:android:1d5d5fc49b301d8a25a773",
+        "android_client_info": {
+          "package_name": "com.tukorea.seottasitta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328629112458-ea0d3iii9pdeb0dagg8v53q3grtd1obs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUPy25ZpZTVebUh2zVljG1ttCTCbNIB9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328629112458-ea0d3iii9pdeb0dagg8v53q3grtd1obs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

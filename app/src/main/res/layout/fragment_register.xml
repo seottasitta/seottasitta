@@ -30,7 +30,6 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="서해따라, 시흥따라\n함께 가보시겠어요?"
@@ -39,63 +38,91 @@
         android:layout_marginTop="127dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
         android:textColor="#02152b"
         />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="5"
+        android:layout_marginRight="40dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insert_name"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:hint="  이름을 입력해주세요. (2~5자)"
+            android:textColor="#6602152b"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/outline_border"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/insert_name"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="21dp"
-        android:background="@drawable/outline_border"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:text="  이름을 입력해주세요. (2~5자)"
-        android:textColor="#6602152b" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insert_id"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/outline_border"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:hint="  사용할 이메일을 입력해주세요"
+            android:textColor="#6602152b" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/insert_id"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/outline_border"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:text="  사용할 아이디를 입력해주세요"
-        android:textColor="#6602152b" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        android:layout_marginRight="40dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/insert_pw"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:hint="  비밀번호를 입력해주세요"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:textColor="#6602152b"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/outline_border"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/insert_pw"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:text="  비밀번호를 입력해주세요"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:textColor="#6602152b"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/outline_border"
-        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        android:layout_marginRight="40dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/check_pw"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:hint="  비밀번호를 다시 입력해주세요"
+            android:fontFamily="@font/kimjungchulgothicregular"
+            android:textSize="15sp"
+            android:textColor="#6602152b"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
 
-    <EditText
-        android:id="@+id/check_pw"
-        android:layout_width="332dp"
-        android:layout_height="48dp"
-        android:text="  비밀번호를 입력해주세요"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:textSize="15sp"
-        android:textColor="#6602152b"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/outline_border"
-        />
+            android:background="@drawable/outline_border"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -104,7 +131,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
 
-        android:id="@+id/login_btn"
+        android:id="@+id/register_btn"
         android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -116,35 +143,4 @@
         android:textColor="#fafcff"
         android:layout_marginTop="10dp"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/kimjungchulgothicregular"
-            android:textSize="12sp"
-            android:textColor="#02152b"
-            android:gravity="center_horizontal"
-            tools:text="서해따라, 시흥따라가 처음이신가요?"
-            android:layout_marginTop="186dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginRight="5dp"/>
-
-        <TextView
-            android:id="@+id/join_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:fontFamily="@font/kimjungchulgothicregular"
-            android:gravity="center|center_vertical"
-            android:onClick="onClick"
-            android:text="회원가입"
-            android:textColor="#064da1"
-            android:textSize="12sp"
-            android:layout_marginTop="186dp"
-            android:layout_marginRight="90dp"
-            />
-    </LinearLayout>
 </LinearLayout>
