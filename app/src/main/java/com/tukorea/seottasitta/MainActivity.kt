@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
 
         // 플로팅 버튼 클릭 이벤트 - 위치인증
         _binding.fabLocCheck.setOnClickListener {
-            Toast.makeText(this,"location check : $isFabOpen", Toast.LENGTH_SHORT).show()
+
         }
         //플로팅 버튼 클릭 이벤트 - 카메라
         _binding.fabCamera.setOnClickListener {
@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun toggleFab(){
-        Toast.makeText(this,"메인 버튼 클릭!", Toast.LENGTH_SHORT).show()
         // 플로팅 액션 버튼 닫기 - 열려있는 플로팅 버튼 집어넣는 애니메이션
         if (isFabOpen) {
             ObjectAnimator.ofFloat(_binding.fabWeatherInfo, "translationY", 0f).apply { start() }
@@ -108,9 +107,9 @@ class MainActivity : AppCompatActivity() {
             ObjectAnimator.ofFloat(_binding.fabCamera, "translationY", 0f).apply { start() }
             ObjectAnimator.ofFloat(_binding.fabMain,  View.ROTATION,360f, 0f).apply { start() }
         } else { // 플로팅 액션 버튼 열기 - 닫혀있는 플로팅 버튼 꺼내는 애니메이션
-            ObjectAnimator.ofFloat(_binding.fabWeatherInfo, "translationY", -430f).apply { start() }
-            ObjectAnimator.ofFloat(_binding.fabLocCheck, "translationY", -340f).apply { start() }
-            ObjectAnimator.ofFloat(_binding.fabCamera, "translationY", -430f).apply { start() }
+            ObjectAnimator.ofFloat(_binding.fabWeatherInfo, "translationY", -330f).apply { start() }
+            ObjectAnimator.ofFloat(_binding.fabLocCheck, "translationY", -240f).apply { start() }
+            ObjectAnimator.ofFloat(_binding.fabCamera, "translationY", -330f).apply { start() }
             ObjectAnimator.ofFloat(_binding.fabMain, View.ROTATION, 0f, 360f).apply { start() }
         }
 

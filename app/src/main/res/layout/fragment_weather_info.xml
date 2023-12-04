@@ -47,6 +47,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+
         >
     </TextView>
 
@@ -69,8 +70,9 @@
                 android:textSize="60sp"
                 android:elevation="5dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
                 android:transformPivotY="30dp"
                 >
             </TextView>
@@ -81,7 +83,7 @@
                 android:textSize="25dp"
                 android:textColor="#02152b"
                 android:fontFamily="@font/kimjungchulgothicbold"
-                android:layout_marginLeft="75dp"
+                android:layout_marginStart="75dp"
                 android:layout_marginTop="10dp"
                 >
             </TextView>
@@ -100,8 +102,9 @@
                 android:textSize="60sp"
                 android:elevation="5dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="20dp"
                 android:transformPivotY="30dp">
             </TextView>
 
@@ -116,22 +119,6 @@
                 android:layout_marginTop="10dp">
             </TextView>
         </FrameLayout>
-
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/info_board"
-        android:fontFamily="@font/kimjungchulgothicregular"
-        android:gravity="center|center_vertical|center_horizontal"
-        android:text="따뜻하게 입으세요!"
-        android:textColor="#02152b"
-        android:textSize="35sp"
-        android:elevation="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp">
-    </TextView>
 
 </LinearLayout>
