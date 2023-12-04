@@ -121,4 +121,22 @@
         </FrameLayout>
     </LinearLayout>
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_board"
+        android:fontFamily="@font/kimjungchulgothicregular"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:text="따뜻하게 입으세요!"
+        android:textColor="#02152b"
+        android:textSize="35sp"
+        android:elevation="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+    </TextView>
+
+>>>>>>> 1b0e447750eed3f139ede712309945fd12d0ddfb
 </LinearLayout>
