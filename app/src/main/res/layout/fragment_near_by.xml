@@ -10,11 +10,8 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/nearToolbar"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        xmlns:tools="http://schemas.android.com/tools"
         android:background="#fafcff"
         android:minHeight="?attr/actionBarSize"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -29,51 +26,35 @@
             android:layout_gravity="center"
             android:textColor="#02152b"
             android:textSize="25sp"/>
-
     </androidx.appcompat.widget.Toolbar>
 
-
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="200dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="btn1"/>
+            <include layout="@layout/near_by_1"/>
 
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="btn2"/>
+            <include layout="@layout/near_by_2"/>
 
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="btn3"/>
+            <include layout="@layout/near_by_3"/>
 
-            <Button
-                android:id="@+id/btn14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="btn4"/>
+            <include layout="@layout/near_by_1"/>
 
-            <Button
-                android:id="@+id/btn15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="btn5"/>
+            <include layout="@layout/near_by_2"/>
+
+            <include layout="@layout/near_by_3"/>
+
+            <include layout="@layout/near_by_1"/>
+
+            <include layout="@layout/near_by_2"/>
+
+            <include layout="@layout/near_by_3"/>
 
         </LinearLayout>
-
     </ScrollView>
 </LinearLayout>

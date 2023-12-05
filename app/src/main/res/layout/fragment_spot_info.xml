@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NearByFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/nearToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#fafcff"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 주변 관광지"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_gravity="center"
+            android:textColor="#02152b"
+            android:textSize="25sp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/spot_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="장소정보"
+                android:fontFamily="@font/kimjungchulgothicbold"
+                android:textSize="25sp"
+                android:textColor="#02152b"
+                >
+            </TextView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:gravity="left"
+                    android:text="내위치로부터"
+                    android:fontFamily="@font/kimjungchulgothicregular"
+                    android:textSize="15sp"
+                    android:textColor="#02152b"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="127dp"
+                    android:gravity="left"
+                    android:text="N.Nkm"
+                    android:fontFamily="@font/kimjungchulgothicregular"
+                    android:textSize="15sp"
+                    android:textColor="#02152b"
+                    >
+                </TextView>
+
+                <include layout="@layout/search_location_bar"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="장소정보"
+                android:fontFamily="@font/kimjungchulgothicbold"
+                android:textSize="25sp"
+                android:textColor="#02152b"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:gravity="left"
+                android:text="장소 설명"
+                android:fontFamily="@font/kimjungchulgothicregular"
+                android:textSize="15sp"
+                android:textColor="#02152b"
+                >
+            </TextView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

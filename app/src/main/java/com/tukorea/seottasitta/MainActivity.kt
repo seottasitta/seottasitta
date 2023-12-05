@@ -92,10 +92,7 @@ class MainActivity : AppCompatActivity() {
         }
         //플로팅 버튼 클릭 이벤트 - 카메라
         _binding.fabCamera.setOnClickListener {
-            val fragment: Fragment = CameraFragment() as Fragment // CameraFragment를 Fragment로 타입 변환
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.containers, fragment)
-            transaction.commit()
+
         }
     }
     private fun toggleFab(){
