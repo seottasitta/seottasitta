@@ -37,9 +37,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/near_by_1"/>
+            <include
+                android:id="@+id/included_search_location_bar1"
+                layout="@layout/near_by_1"/>
 
-            <include layout="@layout/near_by_2"/>
+            <include
+                android:id="@+id/included_search_location_bar2"
+                layout="@layout/near_by_2"/>
 
             <include layout="@layout/near_by_3"/>
 
