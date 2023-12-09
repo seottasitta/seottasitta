@@ -34,18 +34,33 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MoreFragment">
-
-        <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="더보기(메뉴 펼쳐짐)" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객명"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-10dp"
+            android:textColor="#064da1"
+            android:textSize="35sp"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="님\n안녕하세요"
+            android:textColor="#064da1"
+            android:textSize="30sp"
+            android:fontFamily="@font/kimjungchulgothicbold"
+            android:layout_marginTop="56dp"
+            android:gravity="right">
 
+        </TextView>
     </FrameLayout>
 
 </LinearLayout>
