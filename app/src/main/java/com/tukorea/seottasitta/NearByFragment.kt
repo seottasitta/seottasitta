@@ -25,7 +25,7 @@ class NearByFragment : Fragment() {
         val button3: ImageButton = includedLayout3.findViewById(R.id.loc_info_btn3)
 
         button1.setOnClickListener {
-            Toast.makeText(activity, "2번 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, "1번 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()
         }
         button2.setOnClickListener {
             Toast.makeText(activity, "2번 버튼이 눌렸습니다.", Toast.LENGTH_SHORT).show()

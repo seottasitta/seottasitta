@@ -6,6 +6,7 @@ import com.google.android.material.navigation.NavigationBarView
 import com.tukorea.seottasitta.databinding.ActivityMainBinding
 import android.animation.ObjectAnimator
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 private lateinit var binding: ActivityMainBinding
@@ -88,11 +89,14 @@ class MainActivity : AppCompatActivity() {
 
         // 플로팅 버튼 클릭 이벤트 - 위치인증
         _binding.fabLocCheck.setOnClickListener {
-
+            val fragment = LocCheckFragment() // WeatherInfoFragment 인스턴스 생성
+            val transaction = supportFragmentManager.beginTransaction() // FragmentTransaction 시작
+            transaction.replace(R.id.containers, fragment) // containers 레이아웃을 WeatherInfoFragment로 교체
+            transaction.commit() // FragmentTransaction 커밋
         }
         //플로팅 버튼 클릭 이벤트 - 카메라
         _binding.fabCamera.setOnClickListener {
-
+            Toast.makeText(this, "카메라 실행", Toast.LENGTH_SHORT).show()
         }
     }
     private fun toggleFab(){
