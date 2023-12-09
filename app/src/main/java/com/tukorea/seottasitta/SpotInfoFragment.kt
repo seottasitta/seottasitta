@@ -34,7 +34,7 @@ class SpotInforFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_spot_infor, container, false)
+        return inflater.inflate(R.layout.fragment_spot_info, container, false)
     }
 
     companion object {

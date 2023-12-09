@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/info_board"
+    android:elevation="5dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Q.서해따라 시흥따라는 어떤 앱인가요?\nA.K-골든코스트를 따라 시흥의 관광자원을 추천하고 산책로를 추천하는 서비스 입니다"
+        android:textSize="15sp"
+        android:textColor="#02152b"
+        android:fontFamily="@font/kimjungchulgothicregular">
+    </TextView>
+</LinearLayout>
