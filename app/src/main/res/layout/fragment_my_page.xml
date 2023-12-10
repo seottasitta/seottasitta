@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="님\n안녕하세요"
-            android:textColor="#064da1"
+            android:textColor="#02152b"
             android:textSize="30sp"
             android:fontFamily="@font/kimjungchulgothicbold"
             android:layout_marginTop="56dp"
