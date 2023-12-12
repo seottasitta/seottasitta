@@ -48,6 +48,21 @@
             <include
                 android:id="@+id/point3"
                 layout="@layout/near_by_3"/>
+            <include
+                android:id="@+id/point4"
+                layout="@layout/near_by_4"/>
+            <include
+                android:id="@+id/point5"
+                layout="@layout/near_by_5"/>
+            <include
+                android:id="@+id/point6"
+                layout="@layout/near_by_6"/>
+            <include
+                android:id="@+id/point7"
+                layout="@layout/near_by_7"/>
+            <include
+                android:id="@+id/point8"
+                layout="@layout/near_by_8"/>
 
         </LinearLayout>
     </ScrollView>

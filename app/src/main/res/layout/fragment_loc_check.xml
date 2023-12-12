@@ -42,7 +42,7 @@
         android:background="@drawable/info_board"
         android:fontFamily="@font/kimjungchulgothicbold"
         android:gravity="center|center_vertical|center_horizontal"
-        android:text="관광지 이름"
+        android:text="한국공학대 1캠퍼스"
         android:textColor="#02152b"
         android:textSize="30sp"
         android:elevation="5dp"
